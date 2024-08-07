@@ -9,7 +9,7 @@ const cards = [
 
 // Необходимо вывести все карточки 
 // одна карточка - 
-      // <Grid item xs={12} sm={6} md={4} key={card.id}>
+      // <Grid item xs={12} sm={6} md={4}>
       //   <Card>
       //     <CardContent>
       //       <Typography variant="h5">{card.title}</Typography>
