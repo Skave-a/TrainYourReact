@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { FC, useReducer } from 'react';
 
 type State = { count: number };
 type Action = { type: 'increment' | 'decrement' };
@@ -8,7 +8,7 @@ const initialState: State = { count: 0 };
 // Создать reducer, использовать гугл можно =)
 // const reducer =
 
-const UseReducerExample: React.FC = () => {
+const UseReducerExample: FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (

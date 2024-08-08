@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import { Card, CardContent, Typography, Grid } from '@mui/material';
 
 const cards = [
@@ -18,7 +18,7 @@ const cards = [
       //   </Card>
       // </Grid>
 
-const CardList: React.FC = () => (
+const CardList: FC = () => (
   <Grid container spacing={2}>
     {/* вывести карточки тут  */}
   </Grid>

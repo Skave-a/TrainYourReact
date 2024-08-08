@@ -1,11 +1,11 @@
-import React from 'react';
+import { FC, FormEvent } from 'react';
 import { TextField, Button } from '@mui/material';
 
-const ControlledForm: React.FC<{ onSubmit: (data: string) => void }> = ({ onSubmit }) => {
+const ControlledForm: FC<{ onSubmit: (data: string) => void }> = ({ onSubmit }) => {
   // Создать конролируемый компонент, сделать так чтобы form дата из главного 
   // компонента обновлялась при сабмите, после самбита инпут должен очищаться
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
   // ...
   };
