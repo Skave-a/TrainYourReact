@@ -1,6 +1,4 @@
-import { FC } from 'react';
-
-const LazyLoadedComponent: FC = () => (
+const LazyLoadedComponent = () => (
   <div>
     <h2>Lazy Loaded Component</h2>
     <p>This component was loaded lazily!</p>

@@ -1,5 +1,9 @@
-import { FC, FormEvent } from 'react';
+import { FormEvent } from 'react';
 import { TextField, Button, Grid } from '@mui/material';
+
+type BigFormProps = {
+  onSubmit: (data: FormData) => void;
+};
 
 const initialFormData = {
   firstName: 'John',
@@ -12,7 +16,7 @@ const initialFormData = {
   zip: '12345'
 };
 
-const BigForm: FC<{ onSubmit: (data: FormData) => void }> = ({ onSubmit }) => {
+const BigForm = ({ onSubmit } : BigFormProps) => {
   // Вывести данные формы на главной странице
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();

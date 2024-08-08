@@ -1,7 +1,11 @@
-import { FC, FormEvent } from 'react';
-import { TextField, Button } from '@mui/material';
+import { FormEvent } from "react";
+import { TextField, Button } from "@mui/material";
 
-const UncontrolledForm: FC<{ onSubmit: (data: string) => void }> = ({ onSubmit }) => {
+type UncontrolledFormProps = {
+  onSubmit: (data: string) => void;
+};
+
+const UncontrolledForm = ({ onSubmit }: UncontrolledFormProps) => {
   // Создать конролируемый компонент, сделать так чтобы form дата из главного
   // компонента обновлялась при сабмите, после самбита инпут должен очищаться
 
@@ -11,12 +15,10 @@ const UncontrolledForm: FC<{ onSubmit: (data: string) => void }> = ({ onSubmit }
 
   return (
     <form onSubmit={handleSubmit}>
-      <TextField
-        label="Uncontrolled Input"
-        fullWidth
-        margin="normal"
-      />
-      <Button type="submit" variant="contained" color="primary">Submit</Button>
+      <TextField label="Uncontrolled Input" fullWidth margin="normal" />
+      <Button type="submit" variant="contained" color="primary">
+        Submit
+      </Button>
     </form>
   );
 };

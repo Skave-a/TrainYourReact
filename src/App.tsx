@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import { Container, Typography } from "@mui/material";
 import CardList from "./components/CardList";
 import ControlledForm from "./components/ControlledForm";
@@ -9,7 +9,7 @@ import BigForm from "./components/BigForm";
 
 // сделать из LazyLoadedComponent LazyLoadedComponent =)
 
-const App: FC = () => {
+const App = () => {
   const [formData, setFormData] = useState<string[]>([]);
   const [bigFormData, setBigFormData] = useState<{ [key: string]: string }>({});
 
